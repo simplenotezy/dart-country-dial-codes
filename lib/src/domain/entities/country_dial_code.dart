@@ -52,7 +52,7 @@ class CountryDialCode {
     return CountryDialCode(
       code: json['code'] as String,
       dialCode: json['dialCode'] as String,
-      flagURI: 'assets/flags/${json['code'].toString().toLowerCase()}.svg',
+      flagURI: 'assets/flags/${json['code'].toString().toLowerCase()}.png',
       name: json['name'] as String,
     );
   }

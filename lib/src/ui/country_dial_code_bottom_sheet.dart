@@ -1,7 +1,6 @@
 import 'package:country_dial_code/country_dial_code.dart';
 import 'package:country_dial_code/src/data/local/dial_codes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class CountryDialCodeBottomSheet extends StatefulWidget {
   const CountryDialCodeBottomSheet({
@@ -52,7 +51,7 @@ class _CountryDialCodeBottomSheetState
                 itemBuilder: (_, index) {
                   return ListTile(
                     leading: widget.settings.showFlag
-                        ? SvgPicture.asset(
+                        ? Image.asset(
                             filteredCountries[index].flagURI,
                             package: 'country_dial_code',
                           )
