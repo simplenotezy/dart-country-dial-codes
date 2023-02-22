@@ -55,7 +55,6 @@ class _CountryDialCodeBottomSheetState
                         ? SvgPicture.asset(
                             filteredCountries[index].flagURI,
                             package: 'country_dial_code',
-                            width: 50,
                           )
                         : null,
                     title: Text(
